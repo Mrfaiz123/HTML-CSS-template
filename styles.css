@@ -1,0 +1,543 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.main{
+    width: 100%;
+    height: max-content;
+    display:flex;
+}
+.left{
+    height:800px;
+    width: 20%;
+    position: sticky;
+    padding: 13px 13px;
+    top: 0;
+}
+.nav{
+    position: relative;
+    height: 600px;
+}
+.cart{
+    cursor: pointer;
+    margin-top: 15px;
+}
+.logoimg{
+    height: 170px;   
+    width: 80%;
+    top: 50px;
+    transition-duration: 1s;
+}
+.logoimg:hover{
+    opacity: 0.7    ;
+    cursor: pointer;
+}
+li{ 
+    padding: 10px 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    list-style: none;
+    transition-duration: 00.40s;
+}
+li:hover{
+    cursor: pointer;
+    color: red;
+}
+.nav-p{
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+.icons{
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: max-content;
+    visibility: hidden;
+    background-color: #9c8c72;
+    padding: 20px;
+    overflow: scroll;
+    z-index: 5;
+}
+.Art:hover .dropdown{
+    visibility: visible;
+    z-index: 5;
+}
+.dropdown li img{
+    width: 100%;
+    z-index: 5;
+}
+.inner{
+    z-index: 5;
+}
+.dropdown li p{
+    width: 100%;
+    z-index: 5;
+}
+.right{
+    height: max-content;
+    width: 80%;
+    padding: 13px 13px;
+}
+.flower{
+    width: 100%;
+    height: 900px;
+    background-size: 100% 100%;
+}
+.mid{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hr{
+    width: 100px;
+    height: 1px ;
+    margin-top: 20px;
+    background-color:red;
+}
+
+.card{
+    position: relative;
+    z-index: auto;
+}
+.img{
+    height: 250px;
+    width: 100% ;
+    overflow: hidden;
+}
+.imges{
+    height: 100%;
+    width: 100% ;
+}
+.imges:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.picbtn{
+    position: absolute;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 20px;
+    right: 60px;
+    top: 120px;
+    z-index: 3;    
+    font-family: Open Sans, sans-serif;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.98em;
+    border: none;
+    background-color: #eed9b5;
+    color: #9c8c72;
+    z-index: 3;
+    visibility: hidden;
+    transition-duration: 000.30s;
+}
+.picbtn:hover{
+    visibility: visible;
+    animation-name: faded;
+    animation-duration: 0.5s;
+    cursor: pointer;
+    color: white;
+    background-color:slategray ;
+}
+.card:hover button{
+    animation: faded;
+    animation-duration:1s ;
+    visibility: visible;
+}
+.picbtn1{
+    position: absolute;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 20px;
+    right: 100px;
+    top: 120px;
+    z-index: 3;    
+    font-family: Open Sans, sans-serif;
+    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.98em;
+    border: none;
+    background-color: #eed9b5;
+    color: #9c8c72;
+    z-index: 3;
+    visibility: hidden;
+    transition-duration: 000.30s;
+}
+.picbtn1:hover{
+    visibility: visible;
+    animation-name: faded;
+    animation-duration: 0.5s;
+    cursor: pointer;
+    color: white;
+    background-color:slategray ;
+}
+.card1:hover button{
+    animation: faded;
+    animation-duration:1s ;
+    visibility: visible;
+}
+.card1:hover button{
+    animation: faded;
+    animation-duration:1s ;
+    visibility: visible;
+}
+@keyframes faded {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+.card1:hover button{
+    animation: faded;
+    animation-duration:1s ;
+    visibility: visible;
+}
+@keyframes faded {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+.card:hover {
+    cursor: pointer;
+}
+.card1:hover {
+    cursor: pointer;
+    
+}
+
+
+
+   
+.para{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color:green;
+}
+.para:hover{
+    cursor: pointer;
+    color:rgb(224, 169, 101) ;
+}
+.card>p{
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+.round{
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+.round1{
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    border-radius: 50%;
+}
+.round2{
+    position: absolute;
+    top: 8px;
+    left: 230px;
+    height: 60px;
+    width: 60px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(99, 8, 8);
+    border-radius: 50%;
+}
+.round3{
+    position: absolute;
+    top: 8px;
+    left: 240px;
+    height: 60px;
+    width: 60px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+.round4{
+    position: absolute;
+    top: 8px;
+    left: 240px;
+    height: 60px;
+    width: 60px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:gray;
+    border-radius: 50%;
+}
+.contact{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+.contactdiv{
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+}
+.btn{
+    width: 170px;
+    padding: 7px;
+    border-radius: 50px;
+    border: 1px solid silver;
+    transition-duration: 0.5s
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+.last{
+    height: 680px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 1px solid silver;
+}
+.three{
+    height: 270px;
+    width: 95%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    border: 1px solid silver;
+}
+.one{
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+    border: 1px solid rebeccapurple;
+}
+.two{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    background-image: url("man.jpg");
+    background-size: 100% 100%;
+}
+.two:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.h{
+    color: silver;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-left: 20px;
+    transition-duration: 00.30s;
+}
+.h:hover{
+    color: brown;
+    cursor: pointer;
+}
+.t{
+    background-image: url("buresh.jpg");
+    background-size: 100% 100%;
+}
+.w{
+    background-image: url("unknow.jpg");
+    background-size: 100% 100%;
+}
+.first{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.left1{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.right1{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn2{
+    padding: 10px;
+    border: 1px solid black;
+}
+.btn2:hover{
+    cursor: pointer;
+    border: 1px solid slategray;
+}
+.main1{
+    height: 1160px;
+    width: 100% ;
+    display: grid;
+    border: 1px solid rebeccapurple;
+    grid-template-columns: repeat(4,22%);
+    grid-template-rows:repeat(5,350px) ;
+    justify-content: space-evenly;
+    grid-row-gap:50px ;
+}
+.main2{
+    height: 3200px;
+    width: 100% ;
+    background-color:whitesmoke;
+    display: grid;
+    border: 1px solid rebeccapurple;
+    grid-template-columns: repeat(3,28%);
+    grid-template-rows:repeat(8,350px) ;
+    justify-content: space-evenly;
+    grid-row-gap:50px ;
+    border: 1px solid black;
+}
+.main3{
+    height: 2000px;
+    width: 100% ;
+    background-color:whitesmoke;
+    display: grid;
+    border: 1px solid rebeccapurple;
+    grid-template-columns: repeat(3,28%);
+    grid-template-rows:repeat(8,350px) ;
+    justify-content: space-evenly;
+    grid-row-gap:50px ;
+    border: 1px solid black;
+}
+.main4{
+    height: 6600px;
+    width: 100% ;
+    background-color:whitesmoke;
+    display: grid;
+    border: 1px solid rebeccapurple;
+    grid-template-columns: repeat(3,28%);
+    grid-template-rows:repeat(8,350px) ;
+    justify-content: space-evenly;
+    grid-row-gap:50px ;
+    border: 1px solid black;
+}
+.card1{
+    z-index: auto;
+    position: relative;
+}
+.img1{
+    height: 300px;
+    width: 100% ;
+    overflow: hidden;
+}
+.imges1{
+    height: 100%;
+    width: 100% ;
+}
+.imges1:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.para1{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color:green;
+}
+.para1:hover{
+    cursor: pointer;
+    color:rgb(224, 169, 101) ;
+}
+.card1>p{
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+.round{
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+.round1{
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    border-radius: 50%;
+}
+.last1{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+
+
+
+
